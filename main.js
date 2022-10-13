@@ -40,7 +40,7 @@ function evalBeam(beam) {
     throw('Multi-type beam is not supported');
     return;
   }
-  if (!beam.type[types[0]] || !beam.type[types[1]]) {
+  if (!beam.type[types[0]] && !beam.type[types[1]]) {
     throw('Unknow beam type');
     return;
   }
